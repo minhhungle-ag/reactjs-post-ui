@@ -3,7 +3,7 @@ const AppConstants = {
   DEFAULT_PAGE: 1,
   DEFAULT_LIMIT: 6,
 
-  DEFAULT_IMAGE_URL: 'images/recipe.jpg',
+  DEFAULT_IMAGE_URL: 'https://picsum.photos/id/5/1368/400',
   DEFAULT_HERO_IMAGE_URL: 'https://picsum.photos/1368/400',
   DEFAULT_IMAGE_WIDTH: 1368,
   DEFAULT_IMAGE_HEIGHT: 400,

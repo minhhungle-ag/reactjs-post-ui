@@ -1,22 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+// import PropTypes from "prop-types";
 
 Banner.propTypes = {};
 
 function Banner(props) {
   return (
     <div className="carousel-section">
-      <div
-        id="carouselExampleIndicators"
-        className="carousel slide"
-        data-ride="carousel"
-      >
+      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            className="active"
-          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
@@ -52,10 +44,7 @@ function Banner(props) {
             />
             <div className="carousel-caption d-none d-md-block">
               <h5>CHALLENGE YOURSELF</h5>
-              <p>
-                The way I see it, if you want the rainbow, you gotta put up with
-                the rain.
-              </p>
+              <p>The way I see it, if you want the rainbow, you gotta put up with the rain.</p>
             </div>
           </div>
         </div>
@@ -66,10 +55,7 @@ function Banner(props) {
           role="button"
           data-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="sr-only">Previous</span>
         </a>
 
@@ -79,10 +65,7 @@ function Banner(props) {
           role="button"
           data-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="sr-only">Next</span>
         </a>
       </div>

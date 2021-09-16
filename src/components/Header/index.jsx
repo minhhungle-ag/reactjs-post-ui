@@ -1,11 +1,10 @@
-import { Box, Container, Typography } from "@material-ui/core";
-import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
-import Toolbar from "@material-ui/core/Toolbar";
-import PropTypes from "prop-types";
-import React from "react";
-import { Link } from "react-router-dom";
+import { Box, Container, Typography } from '@material-ui/core';
+import AppBar from '@material-ui/core/AppBar';
+import { makeStyles } from '@material-ui/core/styles';
+import Toolbar from '@material-ui/core/Toolbar';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 Header.propTypes = {
   title: PropTypes.string,
@@ -15,10 +14,10 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  title: "",
+  title: '',
   icon: null,
   onClick: null,
-  id: "",
+  id: '',
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -28,12 +27,9 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    flexGrow: 1,
-  },
 
-  add: {
-    cursor: "pointer",
+  title: {
+    cursor: 'pointer',
   },
 }));
 
@@ -51,7 +47,7 @@ export default function Header(props) {
     <div className={classes.grow}>
       <AppBar position="static" color="inherit">
         <Container>
-          <Toolbar>
+          <Toolbar style={{ padding: 0 }}>
             <Box className={classes.grow}>
               <Link to="/home">
                 <img
@@ -62,13 +58,16 @@ export default function Header(props) {
               </Link>
             </Box>
 
-            <Link to="/add-edit" className={classes.add}>
-              <Typography variant="body1" onClick={handleClick}>
-                <span>
-                  {icon} {title}
-                </span>
-              </Typography>
-            </Link>
+            <Typography
+              variant="body1"
+              onClick={handleClick}
+              color="secondary"
+              className={classes.title}
+            >
+              <span>
+                {icon} {title}
+              </span>
+            </Typography>
           </Toolbar>
         </Container>
       </AppBar>
